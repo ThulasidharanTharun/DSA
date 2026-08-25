@@ -13,7 +13,7 @@ class Solution:
                 for j in range(n - i):
                     prefix = (prefix + dp[j]) % MOD
                     new_dp[j] = prefix
-            else:  # 'D'
+            else:  
                 suffix = 0
                 for j in range(n - i - 1, -1, -1):
                     suffix = (suffix + dp[j + 1]) % MOD
