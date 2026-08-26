@@ -16,13 +16,11 @@ class Solution:
                 elif total > target:
                     right -= 1
                 else:
-                    # All elements between left and right are equal
                     if arr[left] == arr[right]:
                         count = right - left + 1
                         ans += count * (count - 1) // 2
                         break
 
-                    # Count duplicates on both sides
                     left_count = 1
                     right_count = 1
 
